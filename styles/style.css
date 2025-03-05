@@ -29,7 +29,7 @@ ol {
 
 .page {
   inline-size: 1200px;
-  block-size: 100%;
+  block-size: 800px;
   color: #fff;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
@@ -43,11 +43,10 @@ ol {
 .content {
   display: grid;
   grid-template-columns: 711px 399px;
-  gap: 27px;
+  gap: 30px;
   grid-template-areas: "result details";
   inline-size: 1140px;
   align-items: end;
-  padding-top: 48px;
 }
 
 .result {
@@ -57,7 +56,7 @@ ol {
 .result__video-container {
   inline-size: 711px;
   block-size: 386px;
-  margin-bottom: 17px;
+  margin-bottom: 16px;
   position: relative;
 }
 
@@ -104,7 +103,8 @@ ol {
   background-color: transparent;
   color: rgba(255, 255, 255);
   font-family: inherit;
-  font-size: inherit;
+  font-size: 16.5px;
+  letter-spacing: 0.58px;
   font-weight: 400;
   line-height: 21.6px;
 }
@@ -137,8 +137,8 @@ ol {
 .search-form__checkbox:checked+.search-form__pseudo-checkbox::after {
   content: '';
   background-color: #fff;
-  inline-size: 16px;
-  block-size: 16px;
+  inline-size: 15px;
+  block-size: 15px;
 }
 
 .search-form__label:has(.search-form__label-text):hover .search-form__label-text {
@@ -153,6 +153,10 @@ ol {
   line-height: 21.6px;
   background-color: transparent;
   color: inherit;
+  font-family: inherit;
+  font-size: 17.5px;
+  font-weight: 700;
+  line-height: 21.6px;
 }
 
 .button:focus {
@@ -177,7 +181,7 @@ ol {
 .search-form__submit-button {
   align-self: flex-end;
   inline-size: 194px;
-  block-size: 35px;
+  block-size: 34px;
 }
 
 .content__details {
@@ -186,14 +190,13 @@ ol {
 }
 
 .title {
+  display: block;
   font-family: Oswald, sans-serif;
   font-size: 75px;
   font-weight: 700;
   line-height: 70.5px;
   text-transform: uppercase;
-  padding-top: 9px;
-  padding-left: 2px;
-  
+  padding-top: 5px;
 }
 
 .content__accent {
@@ -201,21 +204,17 @@ ol {
 }
 
 .content__list-container {
-  block-size: 305px;
-  inline-size: 400px;
+  block-size: 298px;
+  inline-size: 399px;
   overflow-y: auto;
-  margin-top: 17px;
+  margin-top: 21px;
   position: relative;
 }
 
 .content__list {
   display: flex;
   flex-direction: column;
-  gap: 24px;
-}
-
-.content__list-item {
-  padding: 3px;
+  gap: 30px;
 }
 
 .content__card-link {
@@ -258,6 +257,7 @@ ol {
 .content__video-card-description-container {
   flex-grow: 1;
   overflow: hidden;
+  inline-size: 196px;
 }
 
 .content__video-card-title {
@@ -269,30 +269,30 @@ ol {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  padding-top: 3px;
-  padding-bottom: 1px;
 }
 
 .content__video-card-description {
-  margin-top: 5px;
+  margin-top: 4px;
   font-weight: 400;
   line-height: 16.2px;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 1;
-  padding-bottom: 1px;
 }
 
 .content__video-card-thumbnail {
-  width: 194px;
+  width: 197px;
   height: 103px;
   object-fit: cover;
   object-position: center;
+  padding-right: 3px;
 }
 
 .more-button {
-  margin-top: 30px;
-  inline-size: 100%;
+  margin: 30px 3px 2px 2px;
+  margin-left: 2px;
+  inline-size: 390px;
+  block-size: 34px;
 }
 
 .visually-hidden {
