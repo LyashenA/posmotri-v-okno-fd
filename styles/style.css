@@ -29,7 +29,8 @@ ol {
 
 .page {
   inline-size: 1200px;
-  block-size: 800px;
+  block-size: 100%;
+  min-height: 800px;
   color: #fff;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
@@ -103,8 +104,7 @@ ol {
   background-color: transparent;
   color: rgba(255, 255, 255);
   font-family: inherit;
-  font-size: 16.5px;
-  letter-spacing: 0.58px;
+  font-size: 18px;
   font-weight: 400;
   line-height: 21.6px;
 }
@@ -144,6 +144,7 @@ ol {
 .search-form__label:has(.search-form__label-text):hover .search-form__label-text {
   text-decoration: underline;
   text-decoration-thickness: 1px;
+  text-decoration-skip-ink: none;
   cursor: pointer;
 }
 
@@ -154,9 +155,7 @@ ol {
   background-color: transparent;
   color: inherit;
   font-family: inherit;
-  font-size: 17.5px;
-  font-weight: 700;
-  line-height: 21.6px;
+  font-size: 18px;
 }
 
 .button:focus {
@@ -273,6 +272,7 @@ ol {
 
 .content__video-card-description {
   margin-top: 4px;
+  padding-bottom: 4px;
   font-weight: 400;
   line-height: 16.2px;
   display: -webkit-box;
